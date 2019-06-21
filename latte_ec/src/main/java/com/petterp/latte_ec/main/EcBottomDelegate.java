@@ -15,7 +15,7 @@ import java.util.LinkedHashMap;
  * Summary:底部导航栏超类
  * 邮箱：1509492795@qq.com
  */
-public class EcBootomDelegate extends BaseBottomDelegate {
+public class EcBottomDelegate extends BaseBottomDelegate {
     @Override
     public LinkedHashMap<BottomTabBean, BottomItemDelegate> setItems(ItemBuilder builder) {
         final LinkedHashMap<BottomTabBean,BottomItemDelegate> items=new LinkedHashMap<>();

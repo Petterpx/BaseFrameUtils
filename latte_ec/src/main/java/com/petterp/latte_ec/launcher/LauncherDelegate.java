@@ -31,7 +31,7 @@ import butterknife.OnClick;
  * Summary:启动Delegate ->倒计时
  * email：1509492795@qq.com
  */
-public class LaucherDelegeate extends LatteDelegate implements ITimerListener {
+public class LauncherDelegate extends LatteDelegate implements ITimerListener {
 
     @BindView(R2.id.tv_launcher_timer)
     AppCompatTextView mTvTimer = null;
@@ -94,7 +94,7 @@ public class LaucherDelegeate extends LatteDelegate implements ITimerListener {
     private void checkIsShowScroll(){
         if (!LatterPreference.getAppFlag(ScrollLauncherTag.HAS_FIRST_LAUNCHER_APP.name())){
             //退栈再启动一个新的
-            getSupportDelegate().startWithPop(new LaunchaerScrollDelegeate());
+            getSupportDelegate().startWithPop(new LauncherScrollDelegate());
         }else{
             //检查用户是否登录了App
             AccouttManager.checkAccount(new IUserCheker() {

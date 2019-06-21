@@ -1,6 +1,6 @@
 package com.petterp.latte_ec.launcher;
 
-import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
@@ -25,7 +25,7 @@ import java.util.ArrayList;
  * Summary:轮播图片类
  * email：1509492795@qq.com
  */
-public class LaunchaerScrollDelegeate extends LatteDelegate implements OnItemClickListener {
+public class LauncherScrollDelegate extends LatteDelegate implements OnItemClickListener {
 
     private ConvenientBanner<Integer> mConvententBanner=null;
     private static  final ArrayList<Integer> INTEGERS=new ArrayList<>();
@@ -54,10 +54,10 @@ public class LaunchaerScrollDelegeate extends LatteDelegate implements OnItemCli
     }
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        if (activity instanceof ILauncherListener){
-            mILauncherListener= (ILauncherListener) activity;
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof ILauncherListener){
+            mILauncherListener= (ILauncherListener) context;
         }
     }
 

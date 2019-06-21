@@ -9,7 +9,7 @@ import androidx.appcompat.app.ActionBar;
 import com.petterp.latte_core.activity.ProxyActivity;
 import com.petterp.latte_core.app.Latte;
 import com.petterp.latte_core.delegates.LatteDelegate;
-import com.petterp.latte_ec.main.EcBootomDelegate;
+import com.petterp.latte_ec.main.EcBottomDelegate;
 import com.petterp.latte_ec.sign.ISignListener;
 import com.petterp.latte_ui.launcher.ILauncherListener;
 import com.petterp.latte_ui.launcher.OnLauncherFinishTag;
@@ -22,7 +22,7 @@ public class ExampleActivity extends ProxyActivity implements ISignListener,ILau
 
     @Override
     public LatteDelegate setRootDelegate() {
-        return new EcBootomDelegate();
+        return new EcBottomDelegate();
     }
 
     //隐藏actionbar
@@ -48,7 +48,7 @@ public class ExampleActivity extends ProxyActivity implements ISignListener,ILau
 
 
     /**
-     * 回调接口-> LaunchaerScrollDelegeate ，登录了怎样怎样，没有登录怎样怎样
+     * 回调接口-> LauncherScrollDelegate ，登录了怎样怎样，没有登录怎样怎样
      *
      * @param tag
      */
@@ -60,7 +60,7 @@ public class ExampleActivity extends ProxyActivity implements ISignListener,ILau
 //            getSupportDelegate().startWithPop(new EcBottomDelgate());
         } else {
             //退栈并启动
-            getSupportDelegate().startWithPop(new EcBootomDelegate());
+            getSupportDelegate().startWithPop(new EcBottomDelegate());
 //            LatteLoader.showLoading(this);
         }
     }
