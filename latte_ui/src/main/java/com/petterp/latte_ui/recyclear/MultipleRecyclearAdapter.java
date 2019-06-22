@@ -24,8 +24,8 @@ import java.util.List;
  * 邮箱：1509492795@qq.com
  */
 public class MultipleRecyclearAdapter extends
-        BaseMultiItemQuickAdapter<MulitpleItemEntity,
-                MulitipleViewHolder> implements BaseQuickAdapter.SpanSizeLookup, OnItemClickListener {
+        BaseMultiItemQuickAdapter<MultipleItemEntity,
+                MultipleViewHolder> implements BaseQuickAdapter.SpanSizeLookup, OnItemClickListener {
 
 
     /**
@@ -49,7 +49,7 @@ public class MultipleRecyclearAdapter extends
      *在这里加载一些布局
      * @param data A new list is created out of this one to avoid mutable list
      */
-    protected MultipleRecyclearAdapter(List<MulitpleItemEntity> data) {
+    protected MultipleRecyclearAdapter(List<MultipleItemEntity> data) {
         super(data);
         init();
     }
@@ -60,7 +60,7 @@ public class MultipleRecyclearAdapter extends
      * @param data
      * @return
      */
-    public static MultipleRecyclearAdapter create(List<MulitpleItemEntity> data) {
+    public static MultipleRecyclearAdapter create(List<MultipleItemEntity> data) {
         return new MultipleRecyclearAdapter(data);
     }
 
@@ -72,7 +72,7 @@ public class MultipleRecyclearAdapter extends
      * 进行数据转换,针对不同的布局做出不同选择
      */
     @Override
-    public void convert(MulitipleViewHolder holder, MulitpleItemEntity entity) {
+    public void convert(MultipleViewHolder holder, MultipleItemEntity entity) {
         final String text;
         final String imageUrl;
         final ArrayList<String> bannerImages;
@@ -144,8 +144,8 @@ public class MultipleRecyclearAdapter extends
      * @return
      */
     @Override
-    protected MulitipleViewHolder createBaseViewHolder(View view) {
-        return MulitipleViewHolder.create(view);
+    protected MultipleViewHolder createBaseViewHolder(View view) {
+        return MultipleViewHolder.create(view);
     }
 
     @Override

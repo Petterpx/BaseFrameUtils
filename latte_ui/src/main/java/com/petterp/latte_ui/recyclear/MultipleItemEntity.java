@@ -11,7 +11,7 @@ import java.util.LinkedHashMap;
  * Summary:Item的样式->与MulitpleItemEntity建造者
  * 邮箱：1509492795@qq.com
  */
-public class MulitpleItemEntity implements MultiItemEntity {
+public class MultipleItemEntity implements MultiItemEntity {
 
     /**
      * //内存紧张时被回收
@@ -22,7 +22,7 @@ public class MulitpleItemEntity implements MultiItemEntity {
             new SoftReference<>(MULTIPLE_FIELDS, ITEM_QUEUE);
 
 
-    MulitpleItemEntity(LinkedHashMap<Object, Object> fields) {
+    MultipleItemEntity(LinkedHashMap<Object, Object> fields) {
         FIELDS_REFERENCE.get().putAll(fields);
     }
 

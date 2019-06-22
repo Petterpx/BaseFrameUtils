@@ -93,4 +93,7 @@ dependencies {
     //二维码扫描
     api 'me.dm7.barcodescanner:zbar:1.9.13'
 
+    //litepal
+    api 'org.litepal.android:java:3.0.0'
+
 }

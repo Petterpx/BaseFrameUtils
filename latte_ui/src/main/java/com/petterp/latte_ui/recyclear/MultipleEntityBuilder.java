@@ -29,7 +29,7 @@ public class MultipleEntityBuilder {
         FIELDS.putAll(map);
         return this;
     }
-    public final MulitpleItemEntity build(){
-        return new MulitpleItemEntity(FIELDS);
+    public final MultipleItemEntity build(){
+        return new MultipleItemEntity(FIELDS);
     }
 }

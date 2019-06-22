@@ -25,6 +25,7 @@ public class ExampleApp extends Application {
                 .withJavascriptInterface("latte")
                 .withLaucherMode(false)
                 .configure();
+//        LitePal.initialize(getApplicationContext());
 //        initStetho();
 //        DatabaseManager.getInstance().init(this);
 //        //开启极光推送
