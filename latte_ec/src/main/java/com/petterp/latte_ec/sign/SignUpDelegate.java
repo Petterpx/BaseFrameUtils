@@ -133,4 +133,5 @@ public class SignUpDelegate extends LatteDelegate {
     public void onBindView(@Nullable Bundle savedInstanceState, View view) {
 
     }
+
 }

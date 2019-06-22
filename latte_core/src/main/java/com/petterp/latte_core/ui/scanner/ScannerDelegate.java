@@ -61,6 +61,11 @@ public class ScannerDelegate extends LatteDelegate implements ZBarScannerView.Re
     }
 
     @Override
+    public View getToolbar() {
+        return null;
+    }
+
+    @Override
     public void handleResult(Result result) {
         @SuppressWarnings("unchecked")
         final IGlobalCallback<String> callback = CallbackManager
@@ -71,4 +76,5 @@ public class ScannerDelegate extends LatteDelegate implements ZBarScannerView.Re
         }
         getSupportDelegate().pop();
     }
+
 }

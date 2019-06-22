@@ -123,4 +123,6 @@ public abstract class WebDelegate extends LatteDelegate implements IWebViewIniti
             mWebView = null;
         }
     }
+
+
 }

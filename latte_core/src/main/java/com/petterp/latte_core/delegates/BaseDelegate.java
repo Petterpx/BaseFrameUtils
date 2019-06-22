@@ -202,18 +202,17 @@ public abstract class BaseDelegate extends Fragment implements ISupportFragment 
         DELEGATE.onSupportVisible();
         //沉浸式状态栏
         ImmersionBar.with(this)
-                .statusBarView(getTooblar())
+                .titleBar(getToolbar())
                 .keyboardEnable(true).init();
     }
 
     /**
+     * 解决沉浸式状态栏标题栏重叠->根据不同需求
      * 决定是否传入标题栏
      * @return
      */
-    public View getTooblar() {
+    public  View getToolbar(){
         return null;
     }
-
-
 }
 

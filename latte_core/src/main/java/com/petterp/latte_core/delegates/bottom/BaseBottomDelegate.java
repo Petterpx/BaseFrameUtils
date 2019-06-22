@@ -161,7 +161,7 @@ public abstract class BaseBottomDelegate extends LatteDelegate implements View.O
         itemTite.setTextColor(mClickedColor);
         itemIcon.setTextColor(mClickedColor);
         //这一步隐藏布局并显示布局
-        //第一个frgamen是需要显示的，第二个是需要隐藏的,注意先后顺序
-        getSupportDelegate().showHideFragment(ITEM_DELEGATES.get(tag), ITEM_DELEGATES.get(mCurrentDelegate));
+        //第一个fragment是需要显示的，第二个是需要隐藏的,注意先后顺序
+        getSupportDelegate().showHideFragment(ITEM_DELEGATES.get(tag));
     }
 }

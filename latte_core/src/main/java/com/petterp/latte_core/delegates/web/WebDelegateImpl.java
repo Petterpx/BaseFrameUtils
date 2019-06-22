@@ -54,6 +54,11 @@ public class WebDelegateImpl extends WebDelegate {
     }
 
     @Override
+    public View getToolbar() {
+        return null;
+    }
+
+    @Override
     public IWebViewInitializer setInitializer() {
         return this;
     }
